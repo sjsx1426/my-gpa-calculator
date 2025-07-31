@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPA / CGPA Calculator</title>
+  <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 GPA / CGPA Calculator</h1>
+
+    <div id="input-section">
+      <div class="row">
+        <input type="text" placeholder="Subject Name" class="subject">
+        <input type="number" placeholder="Credits" class="credit">
+        <select class="grade">
+          <option value="10">O</option>
+          <option value="9">A+</option>
+          <option value="8">A</option>
+          <option value="7">B+</option>
+          <option value="6">B</option>
+          <option value="0">U</option>
+        </select>
+      </div>
+    </div>
+
+    <button onclick="addRow()">➕ Add Subject</button>
+    <button onclick="calculateGPA()">📊 Calculate GPA</button>
+
+    <h2 id="result"></h2>
+  </div>
+
+  <script src="./js.js"></script>
+</body>
+</html>
